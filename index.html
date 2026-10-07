@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XINZ — Video Editor</title>
+  <meta name="description" content="XINZ (Alexey Galimov) — independent video editor. Reels, YouTube, commercials, motion and color.">
+  <meta property="og:title" content="XINZ — Video Editor">
+  <meta property="og:description" content="Independent video editor working globally.">
+  <meta property="og:image" content="assets/img/avatar.jpg">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e6ebed'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='20' text-anchor='middle' fill='%231c1c1c'%3EX%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css?v=10">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <svg id="preloaderSvg" preserveAspectRatio="none">
+    <defs><filter id="starBlur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="0.8"/></filter></defs>
+    <path id="preloaderPath" fill="#e6ebed" fill-rule="evenodd" filter="url(#starBlur)"/>
+  </svg>
+  <div class="preloader__text" id="preloaderText"></div>
+</div>
+
+<main class="frame">
+  <div class="side"></div>
+
+  <div class="center" id="center">
+
+    <!-- ================= ABOUT ================= -->
+    <section class="sheet sheet--about" data-page="about" aria-label="About">
+      <div class="dots"></div>
+
+      <!-- About Me paper-clipped note -->
+      <div class="anote" id="anote" tabindex="0" role="button" aria-expanded="false" aria-label="About me">
+        <div class="anote__bg"></div>
+        <div class="anote__tex"><img src="assets/img/paper-texture.png" alt=""></div>
+        <h2 class="anote__label label">About Me</h2>
+        <div class="anote__clip"><img src="assets/img/paperclip.png" alt=""></div>
+        <div class="anote__content">
+          <h2 class="anote__intro">I turn raw footage into quiet, cinematic stories — shaped by rhythm, refined in every frame.</h2>
+          <div class="anote__mid">
+            <img src="assets/img/davinci.png" alt="DaVinci Resolve">
+            <p class="label">DaVinci Resolve</p>
+          </div>
+          <div class="anote__bottom">
+            <div class="globe" id="globe">
+              <div class="globe__fit">
+                <div class="globe__sh"><img src="assets/img/globe.svg" alt=""></div>
+                <div class="globe__hl"><img src="assets/img/globe.svg" alt=""></div>
+              </div>
+            </div>
+            <div class="anote__lists">
+              <div class="anote__block">
+                <h2 class="label"><mark>Services</mark></h2>
+                <div class="anote__list">
+                  <p class="label">YouTube video editing</p>
+                  <p class="label">Motion graphics &amp; titles</p>
+                  <p class="label">Color grading</p>
+                  <p class="label">Sound design &amp; mixing</p>
+                </div>
+              </div>
+              <div class="anote__block">
+                <h2 class="label"><mark>Clients</mark></h2>
+                <div class="anote__list">
+                  <p class="label">CyberYozh</p>
+                  <p class="label">Franklin</p>
+                  <p class="label">ТЦ Imall — Главный ТЦ г. Пермь</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__header">
+        <div class="about__namebio">
+          <div class="about__name"><h1 class="melt" data-melt="80">XINZ</h1></div>
+          <div class="about__biowrap">
+            <p class="about__bio">Independent video editor working globally with creators and brands on videos that hold attention and make the story impossible to skip.</p>
+            <a class="tlink label" href="#contact"><span>Let's Talk</span><span>→</span><i class="tlink__bg"></i><i class="tlink__line"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__profile">
+        <div class="stamp" id="stamp">
+          <div class="stamp__mask" id="stampMask">
+            <img src="assets/img/avatar.jpg" alt="XINZ — Alexey Galimov">
+          </div>
+          <div class="hand hand--shot" data-note="shotByShot" data-color="#1c1c1c" data-px="1" data-jitter="0.7"></div>
+        </div>
+      </div>
+
+      <div class="about__bottom">
+        <div class="scopes">
+          <div class="scopes__wrap">
+            <div class="scopes__row"><p class="num label">(01)</p><h2 class="ttl label"><mark style="background:var(--works)">Video Editing</mark></h2></div>
+            <div class="scopes__row"><i class="sp"></i><p class="num label">(02)</p><h2 class="ttl label"><mark style="background:var(--play)">Motion Design</mark></h2><i class="sp"></i></div>
+            <div class="scopes__row"><i class="sp" style="width:34%"></i><p class="num label">(03)</p><h2 class="ttl label"><mark style="background:var(--contact)">Color Grading</mark></h2></div>
+          </div>
+          <p class="label pre">(2026)</p>
+        </div>
+        <div class="loc">
+          <div class="loc__l"><p class="label">Moscow</p><i class="loc__dot"></i><span class="clock" id="clock">--:--:--</span></div>
+          <p class="label">Working Globally</p>
+        </div>
+      </div>
+
+      <div class="press press--about" data-press="About" data-fit="0"></div>
+    </section>
+
+    <!-- ================= WORKS ================= -->
+    <section class="sheet sheet--works" data-page="works" aria-label="Works">
+      <div class="phead"><div class="phead__name"><h1 class="melt" data-melt="64">WORKS</h1></div></div>
+      <div class="works__box">
+        <div class="switch">
+          <button type="button" class="label is-on" data-view="grid"><span>Grid</span><i></i></button>
+        </div>
+        <div class="board board--works" id="worksBoard"></div>
+      </div>
+      <div class="dots"></div>
+      <div class="press press--works" data-press="Works"></div>
+    </section>
+
+    <!-- ================= MOTION ================= -->
+    <section class="sheet sheet--play" data-page="motion" aria-label="Motion">
+      <div class="phead"><div class="phead__name"><h1 class="melt" data-melt="64">MOTION</h1></div></div>
+      <div class="works__box">
+        <div class="board board--motion" id="motionBoard">
+          <div class="hand hand--hey" data-note="hey" data-color="#1c1c1c" data-jitter="0.5"></div>
+          <div class="hand hand--cut" data-note="cutting" data-color="#1c1c1c" data-jitter="0.5"></div>
+        </div>
+      </div>
+      <div class="press press--play" data-press="Motion"></div>
+      <div class="dots"></div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="sheet sheet--contact" data-page="contact" aria-label="Contact">
+      <div class="phead"><div class="phead__name"><h1 class="melt" data-melt="64">CONTACT</h1></div></div>
+      <div class="contact__title"><h2>Got footage that needs a story? A project keeping you up at night? Let's talk!</h2></div>
+      <div class="contact__wrap">
+        <div class="ctable">
+          <div class="crow crow--socials">
+            <p class="crow__label label">Socials</p>
+            <div class="crow__links" id="socials"></div>
+          </div>
+          <div class="crow crow--email">
+            <p class="crow__label label">Email</p>
+            <div class="crow__mail">
+              <a class="tlink tlink--plain label" id="mailLink" href="#"><span id="mailText"></span><span>→</span><i class="tlink__bg"></i></a>
+              <button type="button" class="copy" id="copyBtn" aria-label="Copy email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <form class="cform" id="cform" novalidate>
+          <label class="frow frow--first">
+            <span class="frow__label label">Scope</span>
+            <span class="frow__field frow__field--select"><select name="scope" id="scope" required><option value="" disabled selected>Select…</option></select></span>
+          </label>
+          <label class="frow">
+            <span class="frow__label label">Name</span>
+            <span class="frow__field"><input type="text" name="name" required placeholder="Jane Smith" autocomplete="name"></span>
+          </label>
+          <label class="frow">
+            <span class="frow__label label">Contact</span>
+            <span class="frow__field"><input type="text" name="contact" required placeholder="@telegram or email"></span>
+          </label>
+          <label class="frow">
+            <span class="frow__label label">Message</span>
+            <span class="frow__field"><textarea name="message" required placeholder="Write message"></textarea></span>
+          </label>
+          <div class="cform__btnwrap"><button type="submit" class="submit"><span class="label" id="submitText">Send to Telegram</span></button></div>
+          <p class="cform__hint label" id="formHint">Telegram opens with your message — just press send. It is also copied to your clipboard.</p>
+        </form>
+      </div>
+      <div class="press press--contact" data-press="Contact"></div>
+      <div class="dots"></div>
+    </section>
+
+    <!-- "MY WORKS" note on the black background -->
+    <div class="hand hand--myworks" id="myWorksNote" data-note="myWorks" data-color="#e6ebed" data-px="1" data-jitter="0.35"></div>
+  </div>
+
+  <div class="side side--nav"><nav class="tabs" id="tabs" aria-label="Sections"></nav></div>
+</main>
+
+<!-- overlays -->
+<div class="grain" id="grain" aria-hidden="true"></div>
+<div class="trail" aria-hidden="true"><canvas id="trail"></canvas></div>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox__frame" id="lightboxFrame"></div>
+</div>
+<div class="lightbox__cursor" id="lbCursor" aria-hidden="true">
+  <svg viewBox="0 0 24 24"><path d="M6 6L18 18M18 6L6 18" stroke="#111111" stroke-width="2.2" stroke-linecap="round"/></svg>
+</div>
+
+<script src="js/config.js?v=10"></script>
+<script src="js/notes-data.js?v=10"></script>
+<script src="js/fx.js?v=10"></script>
+<script src="js/app.js?v=10"></script>
+</body>
+</html>
